@@ -6,11 +6,15 @@
 
 #### Required Installations
 
-The libraries we'll be using today are all Node libraries, so we'll need to have Node installed. **Install Node at [nodejs.org](https://nodejs.org/en/).**
+The libraries we'll be using today are all Node libraries, so we'll need to have Node installed.
+
+**Install Node at [nodejs.org](https://nodejs.org/en/).**
 
 #### Table of Contents
 
-1. [Getting Started](https://github.com/OKStateACM/ReactCodelab/blob/master/1 - Getting Started.md)
+1. [Getting Started](https://github.com/OKStateACM/ReactCodelab/blob/master/1%20-%20Getting%20Started.md)
+
+
 
 ***
 
