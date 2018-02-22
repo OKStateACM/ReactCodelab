@@ -105,3 +105,7 @@ Open up `index.html` in your web browser. With any luck, you should see
 > * Ada Lovelace
 > * George Boole
 > * Konrad Zuse
+
+***
+
+###### [« 1. Getting Started](https://github.com/OKStateACM/ReactCodelab/blob/master/1%20-%20Getting%20Started.md) | [3. Component Props, States, and Lifecycles »](https://github.com/OKStateACM/ReactCodelab/blob/master/3%20-%20Component%20Props%2C%20States%2C%20and%20Lifecycles.md) 

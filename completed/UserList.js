@@ -12,6 +12,10 @@ class UserList extends React.Component {
 
     componentWillMount() {
         this.addToList('Ada Lovelace');
+        this.addToList('George Boole');
+        this.addToList('Konrad Zuse');
+        this.addToList('Grace Hopper');
+        this.addToList('Alan Turing');
     }
 
     addToList(name) {

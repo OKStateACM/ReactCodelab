@@ -60,6 +60,6 @@ After issuing the above command, open up the given `index.html` file in your web
 
 If you have that, you're good to go!
 
-<br/>
+***
 
 ###### [2. React »](https://github.com/OKStateACM/ReactCodelab/blob/master/2%20-%20React%20Components.md)

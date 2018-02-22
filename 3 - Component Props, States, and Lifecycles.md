@@ -352,6 +352,10 @@ class UserList extends React.Component {
 
     componentWillMount() {
         this.addToList('Ada Lovelace');
+        this.addToList('George Boole');
+        this.addToList('Konrad Zuse');
+        this.addToList('Grace Hopper');
+        this.addToList('Alan Turing');
     }
 
     addToList(name) {
@@ -376,3 +380,5 @@ module.exports = UserList;
 ```
 
 ***
+
+###### [« 2. React Components](https://github.com/OKStateACM/ReactCodelab/blob/master/2%20-%20React%20Components.md) | [4. Managing Application State with Redux »]() 
