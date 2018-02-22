@@ -14,6 +14,8 @@ The libraries we'll be using today are all Node libraries, so we'll need to have
 
 1. [Getting Started](https://github.com/OKStateACM/ReactCodelab/blob/master/1%20-%20Getting%20Started.md)
 
+2. [React Components](https://github.com/OKStateACM/ReactCodelab/blob/master/2%20-%20React%20Components.md)
+
 
 
 ***
