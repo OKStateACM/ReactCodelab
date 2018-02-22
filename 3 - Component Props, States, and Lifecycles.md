@@ -381,4 +381,4 @@ module.exports = UserList;
 
 ***
 
-###### [« 2. React Components](https://github.com/OKStateACM/ReactCodelab/blob/master/2%20-%20React%20Components.md) | [4. Managing Application State with Redux »]() 
+###### [« 2. React Components](https://github.com/OKStateACM/ReactCodelab/blob/master/2%20-%20React%20Components.md) | [4. Managing Application State with Redux »](https://github.com/OKStateACM/ReactCodelab/blob/master/4%20-%20Managing%20Application%20State%20with%20Redux.md) 

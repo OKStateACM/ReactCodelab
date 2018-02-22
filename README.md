@@ -22,6 +22,8 @@ The libraries we'll be using today are all Node libraries, so we'll need to have
 
 3. [Component Props, States, and Lifecycles](https://github.com/OKStateACM/ReactCodelab/blob/master/3%20-%20Component%20Props%2C%20States%2C%20and%20Lifecycles.md)
 
+4. [Managing Application State with Redux](https://github.com/OKStateACM/ReactCodelab/blob/master/4%20-%20Managing%20Application%20State%20with%20Redux.md)
+
 ***
 
 ![React and Redux joint logos](https://equimper.gallerycdn.vsassets.io/extensions/equimper/react-native-react-redux/1.4.1/1506881814014/Microsoft.VisualStudio.Services.Icons.Default)
