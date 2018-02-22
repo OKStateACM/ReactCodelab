@@ -5,7 +5,7 @@ var UserList = require('./UserList');
 class App extends React.Component {
     render () {
         return (
-            <UserList name4="Grace Hopper" name5="Alan Turing"/>
+            <UserList/>
         );
     }
 };

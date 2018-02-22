@@ -1,23 +1,35 @@
 var React = require('react');
-var PropTypes = require('prop-types');
 
 class UserList extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            list: []
+        };
+    }
+
+    componentWillMount() {
+        this.addToList('Ada Lovelace');
+    }
+
+    addToList(name) {
+        this.setState({
+            list: this.state.list.concat(name)
+        });
+    }
+
     render() {
+        // Converts the this.state.list array to JSX
         return (
             <ul>
-                <li>Ada Lovelace</li>
-                <li>George Boole</li>
-                <li>Konrad Zuse</li>
-                <li>{this.props.name4}</li>
-                <li>{this.props.name5}</li>
+                {this.state.list.map((name) => {
+                    return (<li>{name}</li>);
+                })}
             </ul>
-        )
+        );
     }
-}
-
-UserList.propTypes = {
-    name4: PropTypes.string.isRequired,
-    name5: PropTypes.string.isRequired,
 }
 
 module.exports = UserList;

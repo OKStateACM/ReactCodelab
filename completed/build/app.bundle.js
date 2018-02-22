@@ -7746,43 +7746,45 @@ var PropTypes = __webpack_require__(28);
 var UserList = function (_React$Component) {
     _inherits(UserList, _React$Component);
 
-    function UserList() {
+    function UserList(props) {
         _classCallCheck(this, UserList);
 
-        return _possibleConstructorReturn(this, (UserList.__proto__ || Object.getPrototypeOf(UserList)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (UserList.__proto__ || Object.getPrototypeOf(UserList)).call(this, props));
+
+        _this.state = {
+            list: ['Ada Lovelace']
+        };
+
+        console.log(_this.state);
+        return _this;
     }
 
     _createClass(UserList, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            this.addToList('Ada Lovelace');
+        }
+    }, {
+        key: 'addToList',
+        value: function addToList(name) {
+            this.setState({
+                list: this.state.list.concat(name)
+            });
+        }
+    }, {
         key: 'render',
         value: function render() {
+            // Converts the this.state.list array to JSX
             return React.createElement(
                 'ul',
                 null,
-                React.createElement(
-                    'li',
-                    null,
-                    'Ada Lovelace'
-                ),
-                React.createElement(
-                    'li',
-                    null,
-                    'George Boole'
-                ),
-                React.createElement(
-                    'li',
-                    null,
-                    'Konrad Zuse'
-                ),
-                React.createElement(
-                    'li',
-                    null,
-                    this.props.name4
-                ),
-                React.createElement(
-                    'li',
-                    null,
-                    this.props.name5
-                )
+                this.state.list.map(function (name) {
+                    return React.createElement(
+                        'li',
+                        null,
+                        name
+                    );
+                })
             );
         }
     }]);
