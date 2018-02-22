@@ -4,7 +4,7 @@ In this section, we'll copy our boilerplate resources and install any dependency
 
 ***
 
-#### Installing Node
+### Installing Node
 
 If you haven't done so already, install Node and npm by going to [nodejs.org](https://nodejs.org/en/).
 
@@ -18,7 +18,7 @@ If you get a version number in response, you're good to go!
 
 ***
 
-#### Grabbing the Boilerplate
+### Grabbing the Boilerplate
 
 This codelab makes use of a few libraries like Babel and Webpack that require some configuration that we don't have time to get into today. [I used this reference to get started, if you're interested.](http://ccoenraets.github.io/es6-tutorial-react/setup/) Instead, I've created a boilerplate React/Redux project with that configuration predone.
 
@@ -32,7 +32,7 @@ Once you have the local copy of the repository, navigate inside it and drag the 
 
 ***
 
-#### Installing Dependencies
+### Installing Dependencies
 
 Inside your terminal, navigate into your `react-codelab\` workspace. Once there, call
 
@@ -44,7 +44,7 @@ This will install all of the development dependency packages.
 
 ***
 
-#### Testing Webpack
+### Testing Webpack
 
 This codelab, and most React projects, will use a build tool called [Webpack](https://blog.andrewray.me/webpack-when-to-use-and-why/). Webpack is a module bundler, and it's used to efficiently load dependencies and assets into your project. We've already predefined your Webpack configurations in [`webpack.config.js`](https://github.com/OKStateACM/ReactCodelab/blob/master/react-codelab/webpack.config.js).
 
