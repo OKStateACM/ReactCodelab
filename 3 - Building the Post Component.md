@@ -100,7 +100,7 @@ class App extends React.Component {
         let feed = [];
 
         for(var i = 0; i < list.length; i++) {
-            let post = <Post/>
+            let post = <Post key={i}/>
 
             feed.push(post);
         }
@@ -111,6 +111,8 @@ class App extends React.Component {
 
 ReactDOM.render(<App/>, document.getElementById("app"));
 ```
+
+*(We'll get to why that `key={i}` is inside the `<Post/>` tag in the next section -- for now just know that when you have lists of child elements, each child needs a unique key)*
 
 Run `npm run webpack` in the terminal again and refresh your webpage. You should now have several dummy posts.
 

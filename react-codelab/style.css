@@ -1,9 +1,15 @@
-* {
-    font-family: sans-serif;
-}
-
 .post-box {
     box-shadow: 0px 0px 20px gray;
     margin: 10px;
     padding: 10px;
+    font-family: sans-serif;
+}
+
+.textarea {
+    width: 80%;
+    font-family: sans-serif;
+}
+
+button {
+    display: block;
 }
