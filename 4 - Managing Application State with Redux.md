@@ -2,7 +2,7 @@
 
 In [sections 2](https://github.com/OKStateACM/ReactCodelab/blob/master/2%20-%20React%20Components.md) and [3](https://github.com/OKStateACM/ReactCodelab/blob/master/3%20-%20Component%20Props%2C%20States%2C%20and%20Lifecycles.md), we've explored how to use React components to dynamically create a front end. Let's switch gears for a bit and talk about Redux.
 
-Where React is all about the front-end, [Redux](https://redux.js.org/) is more about the behind-the-scenes of a web app. Redux creates and manages one single, global state for the entire application called the **store**. The store is envisioned as one large, centralized state tree that stores data for the application as a whole. This data is manipulating by firing (or *dispatching*) **actions**.
+Where React is all about the front-end, [Redux](https://redux.js.org/) is more about the behind-the-scenes of a web app. Redux creates and manages one single, global state for the entire application called the **store**. The store is envisioned as one large, centralized state tree that stores data for the application as a whole. This data is manipulated by firing (or *dispatching*) **actions**. These actions are received by **reducers**, which interpret the actions and modify the store accordingly.
 
 ***
 
@@ -29,3 +29,22 @@ function addUser(name) {
     };
 }
 ```
+
+[*Some recommended reading for actions and action creators*](http://blog.isquaredsoftware.com/2016/10/idiomatic-redux-why-use-action-creators/)
+
+Let's implement the above `addUser()` action creator. Create a new JavaScript file called `actions.js`.
+
+**`actions.js`**
+
+```js
+export function addUser(name) {
+    return {
+        type: 'ADD_USER',
+        name: name
+    };
+}
+```
+
+***
+
+### Reducers
