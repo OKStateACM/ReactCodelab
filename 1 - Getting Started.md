@@ -46,7 +46,7 @@ This will install all of the development dependency packages.
 
 ### Testing Webpack
 
-This codelab, and most React projects, will use a build tool called [Webpack](https://blog.andrewray.me/webpack-when-to-use-and-why/). Webpack is a module bundler, and it's used to efficiently load dependencies and assets into your project. We've already predefined your Webpack configurations in [`webpack.config.js`](https://github.com/OKStateACM/ReactCodelab/blob/master/react-codelab/webpack.config.js).
+This codelab, and most React projects, will use a build tool called [Webpack](https://blog.andrewray.me/webpack-when-to-use-and-why/). Webpack is a module bundler, and it's used to efficiently load dependencies and assets into your project. In addition, it kind of compiles our code through a tool called Babel, which is used to let us work with some of the syntax we're using that isn't native to JavaScript. We've already predefined your Webpack configurations in [`webpack.config.js`](https://github.com/OKStateACM/ReactCodelab/blob/master/react-codelab/webpack.config.js).
 
 Our boilerplate defines one script in [`package.json`](https://github.com/OKStateACM/ReactCodelab/blob/master/react-codelab/package.json) for calling Webpack to build your project:
 

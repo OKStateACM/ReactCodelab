@@ -1,0 +1,32 @@
+[
+    {
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg",
+        "name": "Grace Hopper",
+        "user_id": 1906,
+        "status": "Life was simple before World War II. After that, we had systems."
+    },
+    {
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg",
+        "name": "Alan Turing",
+        "user_id": 1912,
+        "status": "We are not interested in the fact that the brain has the consistency of cold porridge."
+    },
+    {
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Edsger_Wybe_Dijkstra.jpg",
+        "name": "Edsger Dijkstra",
+        "user_id": 1930,
+        "status": "I don't need to waste my time with a computer just because I am a computer scientist."
+    },
+    {
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ada_Lovelace_portrait.jpg",
+        "name": "Ada Lovelace",
+        "user_id": 1840,
+        "status": "Mathematical science shows what is. It is the language of unseen relations between things. But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."
+    },
+    {
+        "avatar": "https://upload.wikimedia.org/wikipedia/commons/c/ce/George_Boole_color.jpg",
+        "name": "George Boole",
+        "user_id": 1815,
+        "status": "It is not of the essence of mathematics to be conversant with the ideas of number and quantity. Whether as a general habit of mind it would be desirable to apply symbolic processes to moral argument, is another question."
+    }
+]

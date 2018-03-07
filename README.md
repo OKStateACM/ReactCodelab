@@ -1,4 +1,4 @@
-# Codelab: Front-End Web Application Development with React and Redux
+# Codelab: Front-End Web Application Development with React
 
 ### March 7, 2018
 
