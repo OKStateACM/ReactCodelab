@@ -329,3 +329,92 @@ render() {
 Now whenever the component's state is updated with the new comment, `render()` will call `displayComments()` to get the newest array of comment JSX elements.
 
 If you run `npm run webpack` and refresh, you'll see that you should now be able to add comments! You'll probably get errors about the key not being defined, but it should otherwise be functional.
+
+***
+
+### State of the Code
+
+**`app.js`**
+
+```js
+var React = require('react');
+var ReactDOM = require('react-dom');
+var list = require('./list.json');
+var Post = require('./post');
+
+class App extends React.Component {
+    render () {
+        let feed = [];
+
+        for(var i = 0; i < list.length; i++) {
+            let post = <Post key={i} id={i} avatar={list[i].avatar} user_id={list[i].user_id}
+                name={list[i].name} status={list[i].status}/>
+
+            feed.push(post);
+        }
+
+        return feed;
+    }
+};
+
+ReactDOM.render(<App/>, document.getElementById("app"));
+```
+
+**`post.js`**
+
+```js
+import React from 'react';
+
+class Post extends React.Component {
+
+    constructor(props) {
+        super(props);
+        let id = "field" + this.props.id;
+        this.state = {
+            comments: [],
+            field_id: id
+        }
+        this.submitComment = this.submitComment.bind(this);
+        this.displayComments = this.displayComments.bind(this);
+    }
+
+    componentDidMount() {
+        this.commentBox = document.getElementById(this.state.field_id);
+    }
+
+    submitComment(event) {
+        this.setState({
+            comments: [...this.state.comments, this.commentBox.value]
+        });
+    }
+
+    displayComments() {
+        let commentBlock = [];
+        for(var i = 0; i < this.state.comments.length; i++) {
+            let comment = <p>{this.state.comments[i]}</p>;
+            commentBlock.push(comment);
+        }
+        return commentBlock;
+    }
+
+    render() {
+        return (
+            <div className="post-box">
+                <img src={this.props.avatar} style={{width: 40, height: 40, display: "inline-block"}}/>
+                <h1 style={{display: "inline-block"}}><a href={`./${this.props.user_id}`}>{this.props.name}</a></h1>
+                <p>{this.props.status}</p>
+                <hr/>
+                {this.displayComments()}
+                <textarea id={this.state.field_id} type="text" className="textarea"/>
+                <button onClick={this.submitComment}>Comment</button>
+            </div>
+        );
+    }
+}
+
+module.exports = Post;
+```
+
+***
+
+###### [« 4. Props](https://github.com/OKStateACM/ReactCodelab/blob/master/4%20-%20Props.md) | [6. What Now? »](https://github.com/OKStateACM/ReactCodelab/blob/master/6%20-%20What%20Now.md)

@@ -180,3 +180,7 @@ class Post extends React.Component {
 
 module.exports = Post;
 ```
+
+***
+
+###### [« 3. Building the `<Post/>` Component](https://github.com/OKStateACM/ReactCodelab/blob/master/3%20-%20Building%20the%20Post%20Component.md) | [4. Props »](https://github.com/OKStateACM/ReactCodelab/blob/master/5%20-%20State%20and%20Lifecycles.md)

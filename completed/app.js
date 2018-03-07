@@ -1,12 +1,20 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var UserList = require('./UserList');
+var list = require('./list.json');
+var Post = require('./post');
 
 class App extends React.Component {
     render () {
-        return (
-            <UserList/>
-        );
+        let feed = [];
+
+        for(var i = 0; i < list.length; i++) {
+            let post = <Post key={i} id={i} avatar={list[i].avatar} user_id={list[i].user_id}
+                name={list[i].name} status={list[i].status}/>
+
+            feed.push(post);
+        }
+
+        return feed;
     }
 };
 

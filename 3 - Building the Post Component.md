@@ -117,3 +117,7 @@ ReactDOM.render(<App/>, document.getElementById("app"));
 Run `npm run webpack` in the terminal again and refresh your webpage. You should now have several dummy posts.
 
 Wouldn't it be nice if they *weren't* dummy posts?
+
+***
+
+###### [« 2. Introduction to React](https://github.com/OKStateACM/ReactCodelab/blob/master/2%20-%20Introduction%20to%20React.md) | [4. Props »](https://github.com/OKStateACM/ReactCodelab/blob/master/4%20-%20Props.md)

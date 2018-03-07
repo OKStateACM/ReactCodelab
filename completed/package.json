@@ -15,9 +15,6 @@
     "babel-preset-react": "^6.24.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "webpack": "^3.11.0"
-  },
-  "dependencies": {
-    "prop-types": "^15.6.0"
+    "webpack": "3.11.0"
   }
 }

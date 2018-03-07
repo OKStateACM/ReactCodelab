@@ -80,3 +80,7 @@ ReactDOM.render(<App/>, document.getElementById("app"));
 With this line, ReactDOM takes an instance of the `App` component class defined just before and, using `App`'s `render()` function, injects HTML elements into the `app` div in [`index.html`](https://github.com/OKStateACM/ReactCodelab/blob/master/react-codelab/index.html).
 
 Only one component should get passed into `ReactDOM.render()`, so as a result, `<App/>` ends up being the root node for the entire web application. If we want our app to include post components, those will have to be children of `<App/>`.
+
+***
+
+###### [« 1. Getting Started](https://github.com/OKStateACM/ReactCodelab/blob/master/1%20-%20Getting%20Started.md) | [3. Building the `<Post/>` Component »](https://github.com/OKStateACM/ReactCodelab/blob/master/3%20-%20Building%20the%20Post%20Component.md)

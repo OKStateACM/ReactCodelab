@@ -62,4 +62,4 @@ If you have that, you're good to go!
 
 ***
 
-###### [2. React »](https://github.com/OKStateACM/ReactCodelab/blob/master/2%20-%20React%20Components.md)
+###### [2. Introduction to React »](https://github.com/OKStateACM/ReactCodelab/blob/master/2%20-%20Introduction%20to%20React.md)
