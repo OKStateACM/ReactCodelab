@@ -8,7 +8,7 @@ class App extends React.Component {
         let feed = [];
 
         for(var i = 0; i < list.length; i++) {
-            let post = <Post key={i} avatar={list[i].avatar} user_id={list[i].user_id}
+            let post = <Post key={i} id={i} avatar={list[i].avatar} user_id={list[i].user_id}
                 name={list[i].name} status={list[i].status}/>
 
             feed.push(post);

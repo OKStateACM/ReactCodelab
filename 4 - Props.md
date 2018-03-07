@@ -16,9 +16,11 @@ If instead `<MyParentComponent/>` wants to pass the contents of the `num` variab
 <MyChildComponent foo={num} />
 ```
 
-What information do our `<Post/>` components need from `<App/>`? They need the URL for their posters' avatar, they need their posters' name, they need their posters' unique identifier so that the names can link to the posters' profile, and they need the actual contents of the status. That makes five props:
+What information do our `<Post/>` components need from `<App/>`? They need the URL for their posters' avatar, they need their posters' name, they need their posters' unique identifier so that the names can link to the posters' profile, and they need the actual contents of the status. That makes six props:
 
-* `key`, which is required whenever you're injecting a list of child components
+* `key`, which is required whenever you're injecting a list of child components, but that we as developers don't actually have access to
+
+* `id`, which is our own version of the post's unique identifier
 
 * `avatar`, which represents the poster's avatar URL
 
@@ -35,7 +37,7 @@ render () {
     let feed = [];
 
     for(var i = 0; i < list.length; i++) {
-        let post = <Post key={i} avatar={list[i].avatar} user_id={list[i].user_id}
+        let post = <Post key={i} id={i} avatar={list[i].avatar} user_id={list[i].user_id}
             name={list[i].name} status={list[i].status}/>
 
         feed.push(post);
@@ -52,6 +54,8 @@ render () {
 Now that `<App/>` has given each `<Post/>` their props, we can use those inside the `<Post/>` component.
 
 If a component is given a `foo` prop, the component can access it by calling `this.props.foo`.
+
+> **NOTE:** In React, a component's props are **immutable**. In other words, once they're set, they can't be changed. The component must instead be replaced by another instance of the same component, just with modified props.
 
 Using this, let's start to implement our props in the `<Post/>` component. Since we're injecting the props' values into our JSX, we'll have to use curly brackets.
 
@@ -124,3 +128,55 @@ render() {
 Notice how JSX treats the `style` attribute instead of using a string like HTML would. The doubled-up curly braces indicate that this is a JSON object (inner braces) being injected into the JSX (outer braces). Each style attribute is a key-value pair in that `style` object. Every CSS attribute that would have included dashes (like `margin-top`, for instance) is instead represented in camelcase (`marginTop`).
 
 Run `npm run webpack` and revel in a slightly better looking news feed!
+
+### State of the Code
+
+**`app.js`**
+
+```js
+var React = require('react');
+var ReactDOM = require('react-dom');
+var list = require('./list.json');
+var Post = require('./post');
+
+class App extends React.Component {
+    render () {
+        let feed = [];
+
+        for(var i = 0; i < list.length; i++) {
+            let post = <Post key={i} avatar={list[i].avatar} user_id={list[i].user_id}
+                name={list[i].name} status={list[i].status}/>
+
+            feed.push(post);
+        }
+
+        return feed;
+    }
+};
+
+ReactDOM.render(<App/>, document.getElementById("app"));
+```
+
+**`post.js`**
+
+```js
+import React from 'react';
+
+class Post extends React.Component {
+
+    render() {
+        return (
+            <div className="post-box">
+                <img src={this.props.avatar} style={{width: 40, height: 40, display: "inline-block"}}/>
+                <h1 style={{display: "inline-block"}}><a href={`./${this.props.user_id}`}>{this.props.name}</a></h1>
+                <p>{this.props.status}</p>
+                <hr/>
+                <textarea id="write-comment" className="textarea"/>
+                <button>Comment</button>
+            </div>
+        );
+    }
+}
+
+module.exports = Post;
+```

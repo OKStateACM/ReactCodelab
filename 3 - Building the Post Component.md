@@ -112,7 +112,7 @@ class App extends React.Component {
 ReactDOM.render(<App/>, document.getElementById("app"));
 ```
 
-*(We'll get to why that `key={i}` is inside the `<Post/>` tag in the next section -- for now just know that when you have lists of child elements, each child needs a unique key)*
+> **NOTE:** Whenever you create a list of child elements like this, you need to assign each child a unique `key`. We're just using the child's index in `list`.
 
 Run `npm run webpack` in the terminal again and refresh your webpage. You should now have several dummy posts.
 
