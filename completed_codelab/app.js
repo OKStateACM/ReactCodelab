@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var Post = require('./post');
 var list = require('./list.json');
+var Post = require('./post');
 
 class App extends React.Component {
     render () {

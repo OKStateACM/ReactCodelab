@@ -955,8 +955,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var React = __webpack_require__(2);
 var ReactDOM = __webpack_require__(18);
-var Post = __webpack_require__(27);
-var list = __webpack_require__(28);
+var list = __webpack_require__(27);
+var Post = __webpack_require__(28);
 
 var App = function (_React$Component) {
     _inherits(App, _React$Component);
@@ -7737,6 +7737,12 @@ module.exports = camelize;
 
 /***/ }),
 /* 27 */
+/***/ (function(module, exports) {
+
+module.exports = [{"avatar":"https://upload.wikimedia.org/wikipedia/commons/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg","name":"Grace Hopper","user_id":1906,"status":"Life was simple before World War II. After that, we had systems."},{"avatar":"https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg","name":"Alan Turing","user_id":1912,"status":"We are not interested in the fact that the brain has the consistency of cold porridge."},{"avatar":"https://upload.wikimedia.org/wikipedia/commons/d/d9/Edsger_Wybe_Dijkstra.jpg","name":"Edsger Dijkstra","user_id":1930,"status":"I don't need to waste my time with a computer just because I am a computer scientist."},{"avatar":"https://upload.wikimedia.org/wikipedia/commons/a/a4/Ada_Lovelace_portrait.jpg","name":"Ada Lovelace","user_id":1840,"status":"Mathematical science shows what is. It is the language of unseen relations between things. But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."},{"avatar":"https://upload.wikimedia.org/wikipedia/commons/c/ce/George_Boole_color.jpg","name":"George Boole","user_id":1815,"status":"It is not of the essence of mathematics to be conversant with the ideas of number and quantity. Whether as a general habit of mind it would be desirable to apply symbolic processes to moral argument, is another question."}]
+
+/***/ }),
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7770,28 +7776,21 @@ var Post = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 "div",
-                { className: "post-box" },
-                _react2.default.createElement("img", { src: this.props.avatar, style: { width: 40, height: 40, display: "inline-block" } }),
+                null,
+                _react2.default.createElement("img", { src: "" }),
                 _react2.default.createElement(
                     "h1",
-                    { style: { display: "inline-block" } },
+                    null,
                     _react2.default.createElement(
                         "a",
-                        { href: "./" + this.props.user_id },
-                        this.props.name
+                        { href: "" },
+                        "Name goes here!"
                     )
                 ),
                 _react2.default.createElement(
                     "p",
                     null,
-                    this.props.status
-                ),
-                _react2.default.createElement("hr", null),
-                _react2.default.createElement("textarea", { id: "write-comment", className: "textarea" }),
-                _react2.default.createElement(
-                    "button",
-                    null,
-                    "Comment"
+                    "Status goes here!"
                 )
             );
         }
@@ -7801,12 +7800,6 @@ var Post = function (_React$Component) {
 }(_react2.default.Component);
 
 module.exports = Post;
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports) {
-
-module.exports = [{"avatar":"https://upload.wikimedia.org/wikipedia/commons/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg","name":"Grace Hopper","user_id":1906,"status":"Life was simple before World War II. After that, we had systems."},{"avatar":"https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg","name":"Alan Turing","user_id":1912,"status":"We are not interested in the fact that the brain has the consistency of cold porridge."},{"avatar":"https://upload.wikimedia.org/wikipedia/commons/d/d9/Edsger_Wybe_Dijkstra.jpg","name":"Edsger Dijkstra","user_id":1930,"status":"I don't need to waste my time with a computer just because I am a computer scientist."},{"avatar":"https://upload.wikimedia.org/wikipedia/commons/a/a4/Ada_Lovelace_portrait.jpg","name":"Ada Lovelace","user_id":1840,"status":"Mathematical science shows what is. It is the language of unseen relations between things. But to use and apply that language, we must be able fully to appreciate, to feel, to seize the unseen, the unconscious."},{"avatar":"https://upload.wikimedia.org/wikipedia/commons/c/ce/George_Boole_color.jpg","name":"George Boole","user_id":1815,"status":"It is not of the essence of mathematics to be conversant with the ideas of number and quantity. Whether as a general habit of mind it would be desirable to apply symbolic processes to moral argument, is another question."}]
 
 /***/ })
 /******/ ]);
